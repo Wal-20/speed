@@ -31,29 +31,29 @@
   //length: 100
   
   
-  export function changeElements(word_count,choices){
+  // export function changeElements(word_count,choices){
           
-      document.getElementById('b1').innerHTML = choices[0];
-      document.getElementById('b2').innerHTML = choices[1];
-      document.getElementById('b3').innerHTML = choices[2];
-      document.getElementById('b4').innerHTML = choices[3];
+  //     document.getElementById('b1').innerHTML = choices[0];
+  //     document.getElementById('b2').innerHTML = choices[1];
+  //     document.getElementById('b3').innerHTML = choices[2];
+  //     document.getElementById('b4').innerHTML = choices[3];
     
-    if(word_count >= 6){
-      document.getElementById('b5').innerHTML = choices[4];
-      document.getElementById('b6').innerHTML = choices[5];
-    }
-    if(word_count >= 8){
-      document.getElementById('b7').innerHTML = choices[6];
-      document.getElementById('b8').innerHTML = choices[7];      
-    }
-    document.getElementById('Word').innerHTML = choices[getRandomInt(choices.length)];
+  //   if(word_count >= 6){
+  //     document.getElementById('b5').innerHTML = choices[4];
+  //     document.getElementById('b6').innerHTML = choices[5];
+  //   }
+  //   if(word_count >= 8){
+  //     document.getElementById('b7').innerHTML = choices[6];
+  //     document.getElementById('b8').innerHTML = choices[7];      
+  //   }
+  //   document.getElementById('Word').innerHTML = choices[getRandomInt(choices.length)];
 
-  }
+  // }
   
-  export function validateChoice(clicked_id,setScore,setPage,word_count,choices){
+  export function validateChoice(clicked_id,setScore,setPage){
   
     if(document.getElementById(clicked_id).innerHTML === document.getElementById('Word').innerHTML){
-      changeElements(word_count,choices);
+      //changeElements(word_count,choices);
       setScore();
     }
     
