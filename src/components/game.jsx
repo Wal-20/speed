@@ -20,7 +20,7 @@ const Game = ({score,setPage,setScore,word_count,seconds}) => {
         {/** the string in this h1 or the word choice buttons cannot have a space or a line break because the choice is compared to it, so any added special characters will ruin the comparison */}
         {/** for example: 'open' != 'open\n' != 'open ' */}
 
-        <div>
+        
 
         {buttonIndices.map((index) => (
           <>
@@ -36,11 +36,9 @@ const Game = ({score,setPage,setScore,word_count,seconds}) => {
           </>
           
         ))}
-
-      </div>
           <br />
-  
-      
+
+
           <CountdownTimer seconds={seconds} onTimeout={setPage}/>
        
           <h2> Score: {score} </h2>
