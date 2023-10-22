@@ -52,7 +52,7 @@ button {
   
 }
 button:hover {
-  border-color: #5c64fc;
+  border-color: #535bf2;
   
 }
 
@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 #game-over{
-  margin-top: 50%;
+  margin-top: 35%;
 }
 
 .difficulties{
@@ -120,7 +120,7 @@ button:focus-visible {
 }
 
 #medium > .hide{
-  color: rgb(219, 157, 21);
+  color: rgb(240, 178, 43);
 }
 
 #hard > .hide{
@@ -136,10 +136,25 @@ button:focus-visible {
 }
 
 #medium:hover{
-  color: rgb(219, 157, 21);
-  border-color: rgb(219, 157, 21);
+  color: rgb(240, 178, 43);
+  border-color: rgb(240, 178, 43);
   padding-left: 1.3em;
   padding-right: 1.3em;
+}
+
+.easy-buttons:hover{
+  border-color:rgb(8, 199, 8);
+  color: rgb(8, 199, 8);
+}
+
+.medium-buttons:hover{
+  border-color:rgb(240, 178, 43);
+  color:rgb(240, 178, 43);
+}
+
+.hard-buttons:hover{
+  border-color:rgb(230, 17, 17);
+  color:rgb(230, 17, 17);
 }
 
 
