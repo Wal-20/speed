@@ -26,7 +26,17 @@
    'Zest','Army','Bump','Club','Fish','Gaze','Jump','Lend','Milk','Note','Pink','Star',"Ants", "Band", "Cave", "Dusk", "Fern",
    "Glim", "Hush", "Icy", "Jaws","Kite","Lush", "Mice", "Nova", "Pave", "Quit", "Rats", "Sift", "Torn", "Ugly", "Vast","Wisp", 
    "Xray", "Yell", "Zero", "Aqua", "Bane", "Crag", "Dare", "Earl", "Fizz", "Glow", "Haze", "Inch", "Jolt", "Knee", "Loom", 
-   "Mint", "Nail", "Oath","Puff", "Quiz", "Rise", "Sway", "Tide", "Urge", "Veil", "Wand", "Xeno", "Yarn","Void","Echo",'Zeal'
+   "Mint", "Nail", "Oath","Puff", "Quiz", "Rise", "Sway", "Tide", "Urge", "Veil", "Wand", "Xeno", "Yarn","Void","Echo",'Zeal',
+   "Apple", "Happy", "Sunny", "Dream", "Music", "Fancy", "Chance", "Guitar", "Jolly", "Smile", 
+   "Magic", "Quick", "Dance", "Funny", "Brave", "Witty", "Sugar", "Green", "Cloud", "Cheer", 
+   "Laugh", "Peace", "Beach", "Heart", "Shine", "Party", "Proud", "Sweet", "Grace", "Honor", 
+   "Power", "Tiger", "Flame", "Ocean", "Faith", "Light", "Grin", "Spark", "Joyful", "Flower", 
+   "Dreamy", "Zebra", "Joker", "Happy", "Sunny", "Fresh", "Smirk", "Swift", "Bliss", "Whimsy", 
+   "Peace", "Fancy", "Lucky", "Heart", "Jolly", "Music", "Globe", "Smile", "Candy", "Vivid", 
+   "Glow", "Frost", "Moon", "Bloom", "Calm", "Sugar", "Green", "Cloud", "Cheer", "Laugh", 
+   "Honey", "Blaze", "Magic", "Chill", "Beach", "Dream", "Sweet", "Grace", "Power", "Faith", 
+   "Tiger", "Flame", "Ocean", "Proud", "Honor", "Sugar", "Quick", "Sunny", "Brave", "Witty", 
+   "Dream", "Party", "Shine", "Zebra", "Happy", "Swift"
 ]);
   //length: 100
   
