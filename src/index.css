@@ -29,6 +29,7 @@ body {
   place-items:left;
   min-width: 320px;
   min-height: 100vh;
+  user-select: none;
 }
 
 h1 {
@@ -58,7 +59,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 #again-button{
@@ -86,8 +87,8 @@ button:focus-visible {
   margin-top: 35%;
 }
 
-.difficulties{
-  display: flex;
+#difficulties{
+  /* display: flex; */
   margin-top:auto;
     margin-bottom:auto;
     text-align:center;
@@ -112,6 +113,7 @@ button:focus-visible {
 
 #easy, #medium, #hard{
   margin: .6em;
+  
 }
 
 #easy > .hide{

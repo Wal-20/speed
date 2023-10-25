@@ -51,41 +51,15 @@
   // }
   
   export function validateChoice(clicked_id,setScore,setPage){
-  
-    if(document.getElementById(clicked_id).innerHTML === document.getElementById('Word').innerHTML){
+    
+    const wordElement = document.getElementById('Word').innerHTML;
+    const clickedElement = document.getElementById(clicked_id).innerHTML;
+
+    if(wordElement === clickedElement){
       //changeElements(word_count,choices);
-      setScore();
+      setScore((prevScore) => prevScore + 1);
     }
     
-    else setPage();
+    else setPage('game over');
   
-  }
-
-
-  export function updateHighscore(score,user,diff){
-    // user is the username
-    // called as users.(argument for user)
-    
-    switch(diff){
-      case 'easy': 
-      if(score > user.hs_easy){
-        user.hs_easy = score;
-      }
-      break;
-
-      case 'medium': 
-      if(score > user.hs_medium){
-        user.hs_medium = score;
-      }
-      break;
-
-      case 'hard': 
-      if(score > user.hs_hard){
-        user.hs_hard = score;
-      }
-      break;
-      
-        
-    }
-    console.log(user)
   }
