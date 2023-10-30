@@ -118,7 +118,6 @@ button:focus-visible {
 
 #easy > .hide{
   color: rgb(8, 199, 8);
-  padding-bottom: .1em;
 }
 
 #medium > .hide{
@@ -144,6 +143,13 @@ button:focus-visible {
   padding-right: 1.3em;
 }
 
+#hard:hover{
+  color: rgb(230, 17, 17);
+  border-color: rgb(230, 17, 17);
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+}
+
 .easy-buttons:hover{
   border-color:rgb(8, 199, 8);
   color: rgb(8, 199, 8);
@@ -157,17 +163,6 @@ button:focus-visible {
 .hard-buttons:hover{
   border-color:rgb(230, 17, 17);
   color:rgb(230, 17, 17);
-}
-
-
-#hard:hover{
-  color: rgb(230, 17, 17);
-  border-color: rgb(230, 17, 17);
-  padding-left: 1.3em;
-  padding-right: 1.3em;
-  
-
-
 }
 
 #easy:hover > .hide{
