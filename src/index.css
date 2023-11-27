@@ -153,16 +153,19 @@ button:focus-visible {
 .easy-buttons:hover{
   border-color:rgb(8, 199, 8);
   color: rgb(8, 199, 8);
+  transition: .25s;
 }
 
 .medium-buttons:hover{
   border-color:rgb(240, 178, 43);
   color:rgb(240, 178, 43);
+  transition: .25s;
 }
 
 .hard-buttons:hover{
   border-color:rgb(230, 17, 17);
   color:rgb(230, 17, 17);
+  transition: .25s;
 }
 
 #easy:hover > .hide{

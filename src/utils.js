@@ -13,8 +13,7 @@
       [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
     }
   
-    // Take the first 'count' elements from the shuffled array.
-    return shuffledArray.slice(0, count);
+    return shuffledArray.slice(0, count);     // Take the first 'count' elements from the shuffled array.
   }
   // use this function to guarantee there are no duplicates in word choices
   

@@ -11,7 +11,7 @@ const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
   const choices = getRandomDistinctElements(words,word_count);
   const word = choices[getRandomInt(word_count)];
 
-    const buttonIndices = Array.from({ length: word_count }, (_, index) => index);
+  const buttonIndices = Array.from({ length: word_count }, (_, index) => index);
 
     return (
       <div>
@@ -29,7 +29,7 @@ const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
               {choices[index]}
             </button>
 
-            {(index + 1) % 4 === 0 && <br/>}
+            {(index + 1) % 4 === 0 && index + 1 !== word_count && <br/> /** line break every 4 buttons unless the fourth button in the sequence is the last button of all the buttons */} 
           </>
           
         ))}
