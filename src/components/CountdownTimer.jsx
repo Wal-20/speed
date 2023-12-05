@@ -7,6 +7,7 @@ class CountdownTimer extends Component {
       seconds: props.seconds || 60,
     };
   }
+  // btw OOP in javascript is ridiculous
 
   componentDidMount() {
     this.timerID = setInterval(this.tick, 1000);

@@ -4,13 +4,12 @@ import { validateChoice } from '../utils';
 import { words } from '../utils';
 import { getRandomDistinctElements } from '../utils';
 import CountdownTimer from './CountdownTimer';
-import users from '../users.json'
 
 
 const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
+
   const choices = getRandomDistinctElements(words,word_count);
   const word = choices[getRandomInt(word_count)];
-
   const buttonIndices = Array.from({ length: word_count }, (_, index) => index);
 
     return (
@@ -19,12 +18,11 @@ const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
         {/** the string in this h1 or the word choice buttons cannot have a space or a line break because the choice is compared to it, so any added special characters will ruin the comparison */}
         {/** for example: 'open' != 'open\n' != 'open ' */}
 
-        
 
         {buttonIndices.map((index) => (
           <>
-            <button id={`b${index + 1}`} className={ page === 'game easy' ? 'easy-buttons' : page === 'game medium' ? 'medium-buttons' : 'hard-buttons'}
-             onClick={() => { validateChoice(`b${index + 1}`, setScore, setPage) }} type="button">
+            <button id={`b${index + 1}`} className={page === 'game easy' ? 'easy-buttons' : page === 'game medium' ? 'medium-buttons' : 'hard-buttons'}
+            onClick={() => { validateChoice(`b${index + 1}`, setScore, setPage) }} type="button">
 
               {choices[index]}
             </button>
@@ -34,7 +32,6 @@ const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
           
         ))}
           <br />
-
 
           <CountdownTimer seconds={seconds} onTimeout={setPage}/>
             
