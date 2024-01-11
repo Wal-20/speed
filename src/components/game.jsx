@@ -11,7 +11,7 @@ const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
   const choices = getRandomDistinctElements(words,word_count);
   const word = choices[getRandomInt(word_count)];
   const buttonIndices = Array.from({ length: word_count }, (_, index) => index);
-
+  const buttonClass = page === 'game easy' ? 'easy-buttons' : page === 'game medium' ? 'medium-buttons' : 'hard-buttons';
     return (
       <div>
           <h1 id='Word'>{word}</h1> 
@@ -21,7 +21,7 @@ const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
 
         {buttonIndices.map((index) => (
           <>
-            <button id={`b${index + 1}`} className={page === 'game easy' ? 'easy-buttons' : page === 'game medium' ? 'medium-buttons' : 'hard-buttons'}
+            <button id={`b${index + 1}`} className={buttonClass}
             onClick={() => { validateChoice(`b${index + 1}`, setScore, setPage) }} type="button">
 
               {choices[index]}
