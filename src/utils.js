@@ -1,10 +1,7 @@
-  export function getRandomInt(max) {
-
-    return Math.floor(Math.random() * max);
-  } // generate a random integer less than max
+  const getRandomInt = (max) => Math.floor(Math.random() * max);
+  // generate a random integer less than max
   
-
-  export function getRandomDistinctElements(arr, count) {
+  function getRandomDistinctElements(arr, count) {
 
     const shuffledArray = [...arr];
   
@@ -18,7 +15,7 @@
   // use this function to guarantee there are no duplicates in word choices
   
   
-  export const words = new Set([
+  const words = new Set([
 
    'Bolt','Coin','Drum','Edge','Fire','Gate','Hike','Iron','Lake','Mule','Pail','Quip','Ripe','Sock','Tilt','Vase','Wave','Yawn',
    'Bear','Cake','Door','Eggs','Fall','Gold','Hill','Joke','Lamp','Moon','Nose','Park','Rain','Sand','Tree','Vine','Wind','Yard',
@@ -35,31 +32,21 @@
    "Glow", "Frost", "Moon", "Bloom", "Calm", "Sugar", "Green", "Cloud", "Cheer", "Laugh", 
    "Honey", "Blaze", "Magic", "Chill", "Beach", "Dream", "Sweet", "Grace", "Power", "Faith", 
    "Tiger", "Flame", "Ocean", "Proud", "Honor", "Sugar", "Quick", "Sunny", "Brave", "Witty", 
-   "Dream", "Party", "Shine", "Zebra", "Happy", "Swift"
+   "Dream", "Party", "Shine", "Zebra", "Happy", "Swift","Acorn", "Badge", "Cedar", "Drift",
+   "Eagle", "Flask", "Gourd", "Hazel", "Ivory", "Juice",
+   "Kiosk", "Lemon", "Mango", "Nudge", "Olive", "Plank", "Quack", "Ridge", "Snail", "Tulip",
+   "Unity", "Viper", "Wagon", "Xenon", "Yacht", "Zebra", "Amber", "Blush", "Clove", "Daisy",
+   "Elixir", "Fable", "Glimpse", "Harbor", "Icicle", "Jester", "Kale", "Lagoon", "Mimic", "Nectar",
+   "Oasis", "Petal", "Quartz", "Radiant", "Sable", "Tranquil", "Umbra", "Valley", "Whisper", "Xylophone",
+   "Yonder", "Zenith", "Arrow", "Blizzard", "Cascade", "Dewdrop", "Ember", "Frost", "Glimmer", "Horizon",
+   "Infinity", "Journey", "Kindle", "Luminous", "Mist", "Nimbus", "Orbit", "Pebble", "Quiver", "Radiance",
+   "Sunset", "Twilight", "Uplift", "Vivid", "Wander", "Xenial", "Yearn", "Zephyr", "Aura", "Breeze",
+   "Crystal", "Dawn", "Eclipse", "Fern", "Galaxy", "Halo", "Illuminate", "Jubilee", "Kite", "Lagoon"
+   
 ]);
-  //length: 100
-  
-  
-  // export function changeElements(word_count,choices){
-          
-  //     document.getElementById('b1').innerHTML = choices[0];
-  //     document.getElementById('b2').innerHTML = choices[1];
-  //     document.getElementById('b3').innerHTML = choices[2];
-  //     document.getElementById('b4').innerHTML = choices[3];
-    
-  //   if(word_count >= 6){
-  //     document.getElementById('b5').innerHTML = choices[4];
-  //     document.getElementById('b6').innerHTML = choices[5];
-  //   }
-  //   if(word_count >= 8){
-  //     document.getElementById('b7').innerHTML = choices[6];
-  //     document.getElementById('b8').innerHTML = choices[7];      
-  //   }
-  //   document.getElementById('Word').innerHTML = choices[getRandomInt(choices.length)];
+  //length: 200
 
-  // }
-  
-  export function validateChoice(clicked_id,setScore,setPage){
+  function validateChoice(clicked_id,setScore,setPage) {
     
     const wordElement = document.getElementById('Word').innerHTML;
     const clickedElement = document.getElementById(clicked_id).innerHTML;
@@ -72,3 +59,5 @@
     else setPage('game over');
   
   }
+
+  export { getRandomInt, getRandomDistinctElements, words, validateChoice };

@@ -1,5 +1,5 @@
 import {React} from 'react'
-import { getRandomInt, validateChoice, words, getRandomDistinctElements  } from '../utils';
+import { getRandomInt, validateChoice, words, getRandomDistinctElements } from '../utils';
 import CountdownTimer from './CountdownTimer';
 
 
