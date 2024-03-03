@@ -1,11 +1,6 @@
 import React from 'react'
 
-const Game_over = ({score,setPage,difficulty}) => {
-
-  const highscore = JSON.parse(localStorage.getItem(difficulty)) || 0;
-  
-  if(score > highscore) 
-    localStorage.setItem(difficulty,JSON.stringify(score));
+const Game_over = ({score,setPage}) => {
   
   return (
     <div id='game-over'>

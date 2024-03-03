@@ -1,15 +1,21 @@
-import {React} from 'react'
+import {React, useEffect} from 'react'
 import { getRandomInt, validateChoice, words, getRandomDistinctElements } from '../utils';
 import CountdownTimer from './CountdownTimer';
 
 
-const Game = ({score,page,setPage,setScore,word_count,seconds}) => {
+const Game = ({score,difficulty,setPage,setScore,word_count,seconds}) => {
 
   const choices = getRandomDistinctElements(words,word_count);
   const word = choices[getRandomInt(word_count)];
   
   const buttonIndices = Array.from({ length: word_count }, (_, index) => index);
-  const buttonClass = page === 'game easy' ? 'easy-buttons' : page === 'game medium' ? 'medium-buttons' : 'hard-buttons';
+  const buttonClass = difficulty === 'Easy' ? 'easy-buttons' : difficulty === 'Medium' ? 'medium-buttons' : 'hard-buttons';
+  const highscore = JSON.parse(localStorage.getItem(difficulty)) || 0;
+
+  useEffect(() => {
+    if (score > highscore) 
+      localStorage.setItem(difficulty,JSON.stringify(score));
+  },[score]);
 
   return (
       <div>
